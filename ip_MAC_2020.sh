@@ -30,14 +30,14 @@ if echo "$result" | grep -iq "^1"; then
 
 elif echo "$result" | grep -iq "^2"; then
 	echo "Your local IP Address is:"
-	hostname -I
+	hostname -I | awk '{ print $1 }'
 
 elif echo "$result" | grep -iq "^3a"; then
 	echo "Your MAC Address is:"
-	 ip -a link show dev wlan0 | grep link/ether | awk '{print $2;}'
+	 ip address link show dev wlan0 | grep link/ether | awk '{print $2;}'
 elif echo "$result" | grep -iq "^3b"; then
 	echo "Your MAC Address is:"
-	 ip -a link show dev eth0 | grep link/ether | awk '{print $2;}'
+	 ifconfig | grep ether | awk '{ print $2 }'
 
 elif echo "$result" | grep -iq "^4a"; then
 	echo "Edit your MAC Address like this
