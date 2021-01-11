@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "Developed from Dimitrios Pigkas. v2.0 2021"
+echo "Developed from takispig v2.0 2021"
 echo "Check github's repository: https://github.com/takispig/MAC-spoofer"
 
 sleep 1
