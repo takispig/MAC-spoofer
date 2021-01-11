@@ -16,3 +16,6 @@ If this does not return your network device, then the scripts won't run, or will
 # Feedback
 Since this is a free time experimentation from a non-expert on this field, I don't expect that these scripts are perfect.
 So any feedback and / or corrections would be more than welcome.
+
+# Licence
+[MIT Licence](https://github.com/takispig/MAC-spoofer/blob/main/LICENSE)
