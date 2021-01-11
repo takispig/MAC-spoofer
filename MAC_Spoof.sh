@@ -73,7 +73,7 @@ elif echo "$result" | grep -iq "^q"; then
 	#increase the value of n, to make the condition FALSE and exit the loop.
 	n=$(($n+1))
 
-else echo "Press a combination from 1 to 5, or q to exit. 
+else echo "Press a combination from 1 to 4, or q to exit. 
 Please try again."
 fi
 
